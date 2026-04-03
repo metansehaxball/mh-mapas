@@ -1,0 +1,52 @@
+{
+  "name": "MH x1/2",
+  "width": 420,
+  "height": 200,
+  "spawnDistance": 100,
+  "bg": { "type": "grass", "width": 420, "height": 200, "kickOffRadius": 55, "cornerRadius": 0 },
+  "vertexes": [
+    { "x": -420, "y": -200, "bCoef": 1, "cMask": ["ball"], "cGroup": ["wall"] },
+    { "x": 420, "y": -200, "bCoef": 1, "cMask": ["ball"], "cGroup": ["wall"] },
+    { "x": 420, "y": 200, "bCoef": 1, "cMask": ["ball"], "cGroup": ["wall"] },
+    { "x": -420, "y": 200, "bCoef": 1, "cMask": ["ball"], "cGroup": ["wall"] },
+    { "x": -420, "y": -55, "bCoef": 1, "cMask": ["ball"], "cGroup": ["wall"] },
+    { "x": -460, "y": -55, "bCoef": 1, "cMask": ["ball"], "cGroup": ["wall"] },
+    { "x": -460, "y": 55, "bCoef": 1, "cMask": ["ball"], "cGroup": ["wall"] },
+    { "x": -420, "y": 55, "bCoef": 1, "cMask": ["ball"], "cGroup": ["wall"] },
+    { "x": 420, "y": -55, "bCoef": 1, "cMask": ["ball"], "cGroup": ["wall"] },
+    { "x": 460, "y": -55, "bCoef": 1, "cMask": ["ball"], "cGroup": ["wall"] },
+    { "x": 460, "y": 55, "bCoef": 1, "cMask": ["ball"], "cGroup": ["wall"] },
+    { "x": 420, "y": 55, "bCoef": 1, "cMask": ["ball"], "cGroup": ["wall"] }
+  ],
+  "segments": [
+    { "v0": 0, "v1": 1, "bCoef": 1, "cMask": ["ball"], "cGroup": ["wall"], "color": "1a1a2e" },
+    { "v0": 1, "v1": 2, "bCoef": 1, "cMask": ["ball"], "cGroup": ["wall"], "color": "1a1a2e" },
+    { "v0": 2, "v1": 3, "bCoef": 1, "cMask": ["ball"], "cGroup": ["wall"], "color": "1a1a2e" },
+    { "v0": 3, "v1": 0, "bCoef": 1, "cMask": ["ball"], "cGroup": ["wall"], "color": "1a1a2e" },
+    { "v0": 0, "v1": 4, "bCoef": 1, "cMask": ["ball","red","blue"], "cGroup": ["wall"], "color": "ffc83d" },
+    { "v0": 7, "v1": 3, "bCoef": 1, "cMask": ["ball","red","blue"], "cGroup": ["wall"], "color": "ffc83d" },
+    { "v0": 4, "v1": 5, "bCoef": 1, "cMask": ["ball"], "cGroup": ["wall"], "color": "ffc83d" },
+    { "v0": 5, "v1": 6, "bCoef": 1, "cMask": ["ball"], "cGroup": ["wall"], "color": "ffc83d" },
+    { "v0": 6, "v1": 7, "bCoef": 1, "cMask": ["ball"], "cGroup": ["wall"], "color": "ffc83d" },
+    { "v0": 1, "v1": 8, "bCoef": 1, "cMask": ["ball","red","blue"], "cGroup": ["wall"], "color": "ffc83d" },
+    { "v0": 11, "v1": 2, "bCoef": 1, "cMask": ["ball","red","blue"], "cGroup": ["wall"], "color": "ffc83d" },
+    { "v0": 8, "v1": 9, "bCoef": 1, "cMask": ["ball"], "cGroup": ["wall"], "color": "ffc83d" },
+    { "v0": 9, "v1": 10, "bCoef": 1, "cMask": ["ball"], "cGroup": ["wall"], "color": "ffc83d" },
+    { "v0": 10, "v1": 11, "bCoef": 1, "cMask": ["ball"], "cGroup": ["wall"], "color": "ffc83d" }
+  ],
+  "goals": [
+    { "p0": [-460, -55], "p1": [-460, 55], "team": "red" },
+    { "p0": [460, -55], "p1": [460, 55], "team": "blue" }
+  ],
+  "discs": [
+    { "pos": [-420, 0], "color": "ffc83d", "radius": 3, "invMass": 0 },
+    { "pos": [420, 0], "color": "ffc83d", "radius": 3, "invMass": 0 }
+  ],
+  "planes": [
+    { "normal": [0, 1], "dist": -200, "bCoef": 1, "cMask": ["ball"], "cGroup": ["wall"] },
+    { "normal": [0, -1], "dist": -200, "bCoef": 1, "cMask": ["ball"], "cGroup": ["wall"] }
+  ],
+  "ballPhysics": { "radius": 10, "bCoef": 0.4, "invMass": 1, "damping": 0.99 },
+  "playerPhysics": { "bCoef": 0, "invMass": 0.5, "damping": 0.96, "acceleration": 0.11, "kickingAcceleration": 0.083, "kickingDamping": 0.96, "kickStrength": 5 },
+  "maxViewWidth": 1200
+}
